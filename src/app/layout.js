@@ -1,4 +1,6 @@
-import './globals.css';
+import './globals.scss';
+
+import { Providers } from './providers';
 
 export const metadata = {
   title: 'Carbon + Next13',
@@ -8,7 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

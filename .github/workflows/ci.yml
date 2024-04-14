@@ -2,14 +2,14 @@ name: ci
 on:
   pull_request:
     branches:
-      - main
+      - v11-next-step-5
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  main:
+  step-five:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
